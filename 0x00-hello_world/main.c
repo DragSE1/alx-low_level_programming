@@ -1,14 +1,12 @@
 #include <stdio.h>
 /**
-*main - entry point
+* main - entry point
 *
-*Return: Always 0(success)
+* Return: Always 0(success)
 */
-Int main(void)
+int main(void)
 {
-
-	             return(0);
-
+	return (0);
 }
 
 
