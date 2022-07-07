@@ -1,0 +1,1 @@
+using func. and loops
