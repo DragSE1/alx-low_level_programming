@@ -4,7 +4,6 @@
  * @s: pointer to string
  * @b: constant byte
  * @n: no. of times b is filled in
- * @i: local variable
  *
  * Return:  s
  */
