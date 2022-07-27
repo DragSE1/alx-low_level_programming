@@ -10,8 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	char name = argv[0];
 	int num = argc - 1;
+	(void)argv;
 
 	if (argc > 1)
 	{
