@@ -23,13 +23,14 @@ char *create_array(unsigned int size, char c)
 		{
 			return (NULL);
 		}
-		else if (a == NULL)
-		{
-			return (NULL);
-		}
 		else
 		{
 			a[i] = c;
+
+			if (a == NULL)
+			{
+				return (NULL);
+			}
 		}
 	}
 
