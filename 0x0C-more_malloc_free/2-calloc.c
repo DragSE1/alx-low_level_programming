@@ -26,6 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	else
 	{
+		free(array);
 		return (array);
 	}
 }
