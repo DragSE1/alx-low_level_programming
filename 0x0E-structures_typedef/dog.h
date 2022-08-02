@@ -9,7 +9,7 @@
  *
  * Discription: a structure used to hold the name, age, and owner of a dog
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
