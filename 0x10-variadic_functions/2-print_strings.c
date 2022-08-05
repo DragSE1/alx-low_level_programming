@@ -4,14 +4,14 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints given numbers
- * @separator: string to separate the nums
+ * print_strings - prints given string
+ * @separator: strings to separate given strings
  * @n: number of arguments given
  *
  * Return: on condition
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list arg;
@@ -22,11 +22,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (separator == NULL || i == (n - 1))
 		{
-			printf("%d", va_arg(arg, int));
+			printf("%s", va_arg(arg, char *));
+		}
+		else if (va_arg(arg, char *) == NULL)
+		{
+			printf("(nil)");
 		}
 		else
 		{
-			printf("%d%s", va_arg(arg, int), separator);
+			printf("%s%s", va_arg(arg, char *), separator);
 		}
 	}
 
